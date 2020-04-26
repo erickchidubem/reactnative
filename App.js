@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
-import {SafeAreaView,StyleSheet,ScrollView,View,Text,StatusBar} from 'react-native';
 import {Provider} from 'react-redux';
-import LoggedOut from './src/screens/LogOut';
-import store from './shared/redux/store/';
+import store from './src/shared/redux/store';
+import AppNavigator from './src/shared/routes/AppNavigator';
+
 
 export default class App extends Component {
 
   render(){
-
-        return (
-       
-          <Provider store={store}>
-            {/* <LoggedOut/> */}
-          </Provider>
+        return ( 
+           <Provider store={store}>
+                  <AppNavigator/> 
+           </Provider>
         );
   }
 };
