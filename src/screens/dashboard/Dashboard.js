@@ -5,27 +5,18 @@ import {StyleSheet,Text,View, Image,TouchableHighlight,TextInput} from 'react-na
 import * as common from '../../components/common/';
 
 class Dashboard extends Component {
-  
 
-
-   
     onMoreOptionsPress=()=>{
 
     }
 
-   
-
     render (){
 
-        let { email, password } = this.state;
         return (
         <View style={styles.wrapper}>
                 <View style={styles.welcomeWrapper}>
                    <Text style={styles.welcomeText}>Welcome to Dashboard</Text>
-                   
-
-                    
-  
+                   <Text style={styles.welcomeText}>Today is a happy day</Text>
 
                      <common.CommonRoundButton 
                        text="Logout" textColor={colors.white}
@@ -38,8 +29,6 @@ class Dashboard extends Component {
         );
     }
 }
-
-
 
 const styles = StyleSheet.create({
     wrapper : {
