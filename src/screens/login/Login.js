@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import colors from '../../assets/styles/colors';
-//import Toast from 'react-native-simple-toast';
+import Toast from 'react-native-simple-toast';
 import {StyleSheet,Text,View, Image,TouchableHighlight,TextInput} from 'react-native';
 import * as common from '../../components/common/';
-//import {LoginAction} from './LoginAction';
+import {LoginAction} from './LoginAction';
 class Login extends Component {
     state = {
         email: '',

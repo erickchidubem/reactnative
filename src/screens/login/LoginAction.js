@@ -5,9 +5,9 @@ import utils from '../../shared/utils/utils';
 import Toast from 'react-native-simple-toast';
 
 export const LoginAction =(email,password)=>{
-    if(email == "erickchidubem@gmail.com" && password == "123045"){
+    if(email == "e@gmail.com" && password == "123045"){
         //trigger reducer 
-        dispatch({ type: SAVE_EMAIL,payload: email })
+        //dispatch({ type: SAVE_EMAIL,payload: email })
 
         Toast.show('Correct Login credentials');
         //Navigate to dashboard
